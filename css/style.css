@@ -5,14 +5,83 @@ body {
   font-size: 20px;
 }
 
+html, body {
+    height: 100%;
+}
+
 header nav {
-  text-align: right;
-  background: rgba(0,0,0,0.6);
-  color: white;
+  text-align: center;
+/*  background: rgba(0,0,0,0.6);
+*/  color: white;
   font-size: 1em;
   position: fixed;
   width: 100%;
+  font-family: Raleway;
+  border-bottom: #abb8c2 1px solid;
+
 }
+
+#navbar{
+z-index: 10;
+background: white;
+}
+
+.img-circle{
+  border-radius: 50%;
+  width="50";
+  height="50";
+}
+
+/*.img-name{
+  width="50";
+  height="50";
+}
+*/
+.navname{
+    transition: 0.4s;
+/*  color: #ffffff;
+*/    color: black;
+
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+  float: left;
+  position: absolute;
+  left: 4em;
+  top: 1.15em;
+}
+
+.navtitle {
+  transition: 0.4s;
+/*  color: #ffffff;
+*/    color: black;
+
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+
+.navtitle:hover {
+    font-size: 1.1em;
+
+  background-color: #ffffff;
+  color: #EEA200;#Ω
+  padding: 24px 10px;
+}
+
+.selected {
+  font-size: 1.1em;
+  color: #5175C0;
+  border-bottom: #5175C0 3px solid;
+  background-color: #ffffff;
+/*  color: #EEA200;
+*/  padding: 24px 10px;
+/*  background: rgba(255,255,255,0.3);
+*/}
+
+
 header nav a {
   color: inherit;
   text-decoration: none;
@@ -20,28 +89,40 @@ header nav a {
   padding: 2em 1em .5em;
   -webkit-transition: all .3s ease-in;
 }
-.small {
+
+.navTitleChange {
   padding: .5em 1em;
 }
-header nav a:hover {
-  text-decoration: underline;
-}
 
-.active {
-  background: rgba(255,255,255,0.3);
+.navTitleChange:hover {
+    font-size: 1.1em;
+
+  background-color: #ffffff;
+  color: #EEA200;
+  padding: .5em 1em;
+}
+/*header nav a:hover {
+  text-decoration: underline;
+}*/
+
+.ViewPointHeight{
+  height: 100vh; 
+  background-color: transparent;
 }
 
 .portion {
-  
-  background-image:  url('http://p1.pichost.me/640/60/1842352.jpg');
-  background-position: center center;
+  background: white;
+/*  background-image:  url('http://p1.pichost.me/640/60/1842352.jpg');
+*/  background-position: center center;
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
 }
+
 .portion.two {
-  background-image: url('http://cdn.desktopwallpapers4.me/media/thumbs_400x250/4/31677.jpg');
-}
+  background: white;
+/*  background-image: url('http://cdn.desktopwallpapers4.me/media/thumbs_400x250/4/31677.jpg');
+*/}
 .portion h2 {
   color: white;
   font-weight: normal;
@@ -53,9 +134,22 @@ header nav a:hover {
 }
 
 .info {
-  background: #FFFAF0;
+  background: white;
   color: #777;
-  padding: 3em 20%;
+  padding: 84px 10% 0em 10%;
+}
+
+/*.portion1Content{
+  padding: 10% 0;
+}
+*/
+
+.container{
+  height: 100%;
+}
+
+.footerinfo{
+  margin: 0px 0px;
 }
 
 .button {
@@ -100,7 +194,7 @@ nav img {
   transition: all 0.5s linear;
 }
 
-.move {
+.navMove {
   top: -60px;
 }
 
@@ -108,10 +202,9 @@ nav span {
   position: absolute;
   left: 40px;
   top: 10px;
-  font-weight: bold;
   transition: all 0.5s ease-in;
 }
 
-.movetext {
+/*.movetext {
   top: -30px;
-}
+}*/

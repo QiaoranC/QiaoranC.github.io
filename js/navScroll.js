@@ -24,24 +24,29 @@ $(document).scroll(function () {
 
   // add class active to nav a on scroll
   var scrollPos = $(document).scrollTop() + 100;
-  $('nav a').each(function () {
+  // $('nav a').each(function () {
+      $('.navtitle').each(function () {
+
     var currLink = $(this);
     var refElement = $(currLink.attr("href"));
     if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-      $('nav a').removeClass("active");
-      currLink.addClass("active");
+      $('nav a').removeClass("selected");
+      currLink.addClass("selected");
     }
   });
   
   // changing padding of nav a on scroll
     if (scrollPos > 250) {
-      $('nav a').addClass('small');
-      $('nav img').addClass('move');
-      $('nav span').removeClass('movetext');
+      $('nav a').addClass('navTitleChange');
+      $('nav img').addClass('navMove');
+      // $('.navname').addClass('navImgMove');
+      $('nav span').addClass('navMove');
     } else {
-      $('nav a').removeClass('small');
-      $('nav img').removeClass('move');
-      $('nav span').addClass('movetext');
+      $('nav a').removeClass('navTitleChange');
+      $('nav img').removeClass('navMove');
+      // $('.navname').removeClass('navImgMove');
+
+      $('nav span').removeClass('navMove');
     }
   
 });
