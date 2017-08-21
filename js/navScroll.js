@@ -36,7 +36,7 @@ $(document).scroll(function () {
   });
   
   // changing padding of nav a on scroll
-    if (scrollPos > 250) {
+    if (scrollPos > 100) {
       $('nav a').addClass('navTitleChange');
       $('nav img').addClass('navMove');
       // $('.navname').addClass('navImgMove');
@@ -50,3 +50,4 @@ $(document).scroll(function () {
     }
   
 });
+
