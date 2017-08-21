@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   padding: 0;
@@ -11,8 +13,7 @@ html, body {
 
 header nav {
   text-align: center;
-/*  background: rgba(0,0,0,0.6);
-*/  color: white;
+  color: white;
   font-size: 1em;
   position: fixed;
   width: 100%;
@@ -38,15 +39,9 @@ background: white;
   height="50";
 }
 
-/*.img-name{
-  width="50";
-  height="50";
-}
-*/
 .navname{
     transition: 0.4s;
-/*  color: #ffffff;
-*/    color: black;
+    color: black;
 
   font-size: 20px;
   text-decoration: none;
@@ -60,8 +55,7 @@ background: white;
 
 .navtitle {
   transition: 0.4s;
-/*  color: #ffffff;
-*/    color: black;
+    color: black;
 
   font-size: 20px;
   text-decoration: none;
@@ -110,9 +104,6 @@ header nav a {
   color: #5175C0;
   padding: .5em 1em;
 }
-/*header nav a:hover {
-  text-decoration: underline;
-}*/
 
 .titleAboutME{
   text-align: left;
@@ -160,8 +151,7 @@ header nav a {
 
 .portion {
   background: white;
-/*  background-image:  url('http://p1.pichost.me/640/60/1842352.jpg');
-*/  background-position: center center;
+  background-position: center center;
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
@@ -169,8 +159,7 @@ header nav a {
 
 .portion.two {
   background: white;
-/*  background-image: url('http://cdn.desktopwallpapers4.me/media/thumbs_400x250/4/31677.jpg');
-*/}
+}
 .portion h2 {
   color: white;
   font-weight: normal;
@@ -186,11 +175,6 @@ header nav a {
   color: #777;
   padding: 84px 10% 0em 10%;
 }
-
-/*.portion1Content{
-  padding: 10% 0;
-}
-*/
 
 .container{
   height: 100%;
@@ -225,7 +209,7 @@ nav img {
 }
 
 .navMove {
-  top: -60px;
+  top: -160px;
 }
 
 nav span {
@@ -235,20 +219,6 @@ nav span {
   transition: all 0.5s ease-in;
 }
 
-/*.movetext {
-  top: -30px;
-}*/
-
-
-/**{
-  margin:0;
-  padding:0;
-  box-sizing:
-}
-body{
-  background:#CCCAA1;
-  font-family: 'Source Sans Pro', sans-serif;
-}*/
 ul li{
   list-style:none;
 }
@@ -336,3 +306,60 @@ img.icon{
 .cl{
   background:rgba(93, 181, 29, 0.8);
 }
+
+
+
+.animate{
+    opacity: 0;
+}
+
+.play .animate {
+    opacity: 1;
+}
+
+.play .bounce_in_down{
+    -webkit-animation:bounceInDown 2s;
+}
+
+/*.play .bounce_in_down1{
+    -webkit-animation:bounceInDown 1s;
+}
+*/.play .bounce_in_down2{
+    -webkit-animation:bounceInDown 1s;
+}
+.play .bounce_in_down3{
+    -webkit-animation:bounceInDown 1.5s;
+}
+.play .bounce_in_down4{
+    -webkit-animation:bounceInDown 2s;
+}
+
+.play .bounce_in_up{
+    -webkit-animation:bounceInUp 2s;
+}
+
+.bounce_up_out{
+    -webkit-animation:bounceOutUp 2s;
+}
+
+/*.play .zoomIn{
+    -webkit-animation:zoomIn 2s;
+}
+*/
+.play .fadeInLeft{
+    -webkit-animation:bounceInLeft 2s;
+}
+
+.play .fadeInRight{
+    -webkit-animation:bounceInRight 2s;
+}
+
+
+/*div.scroll-watch-in-view {
+  opacity: 1;
+}
+*/
+
+
+
+
